@@ -86,7 +86,7 @@
 								</a>
 								<ul class="submenu">
 									<c:forEach var="item" items="${pfuserinfo.resources}">
-										<c:if test="${item.resourcesuperiorid != 0 && item.resourcesuperiorid == menus.id}">
+										<c:if test="${item.resourcesuperiorid != 0 && item.resourcesuperiorid == menus.id && item.rank!=0}">
 											<li>
 												<a href="#" onclick="show(this,'${ctx}${item.resourceurl}')">
 													<i class="icon-double-angle-right"></i>
@@ -124,9 +124,12 @@
 						</li>
 						<li></li>
 					</ul><!--.breadcrumb-->
+					
 				</div>
 				<!-- iframe 内容显示  -->
-				<iframe id="iframe_web" class="iframe"></iframe>
+				<!-- style="background-image: url('${ctx }/img/timg.jpg');background-size:auto" -->
+				<iframe id="iframe_web" class="iframe"    ></iframe>
+			
 			</div><!--/.main-content-->
 		</div><!--/.main-container-->
 		

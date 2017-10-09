@@ -1,5 +1,5 @@
 ﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%@ taglib  prefix="c" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib  prefix="c" uri="http://java.sun.com/jstl/core_rt"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -111,9 +111,9 @@
 									<div class="controls controls-m">
 										<select class="chzn-select" data-placeholder="-请选择-" name="workstatus" onchange="getwork()">
 											<option value="" />
-											<option value="1" />在职
-											<option value="2" />离职											
-										</select>
+											<option value="1" >在职</option>
+											<option value="2" >离职	</option>										
+                                    </select>
 									</div>
 								</div>
 							</div><!--/span-->
